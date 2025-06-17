@@ -1,0 +1,107 @@
+/* Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b0c2a;
+  color: white;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #ffd700;
+}
+
+header {
+  background: #1c1d3c;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a:hover {
+  color: #00ffff;
+}
+
+.hero {
+  background: url('Spacebg.jpg') no-repeat center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.content-section {
+  padding: 3rem 2rem;
+  background: #15163b;
+}
+
+.content-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1f204b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 280px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #292a5e;
+}
+
+footer {
+  background: #0e0f2e;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
